@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title>Employee List</title>
+    <meta name="description" content="Webpage">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="scripts.js"></script>
+	</head>
+	
+	<body>
+		
+		
+	<form id="empInfo">
+		<fieldset>
+			<legend>Employee Information</legend>
+			<!-- added for in labels to bind them to the text box better/ easier selection -->
+			<p><label for="FirstName">First Name: </label><input id="FirstName"type="text" name="FirstName"> <!-- added ids in classroom -->
+			<label for="FirstName"> Last Name: </label><input id="LastName" type="text" name="LastName"></p>
+			<p><label for="EmployeeNumber">Employee #: </label><input id="EmployeeNumber" type="text" name="EmployeeNumber">
+			<label for='Title'> Job Title: </label><input id="Title" type="text" name="Title"></p>
+			<p><label for="Rating">Rating: </label><input id="Rating" type="number" name="Rating" min="1" max="5"></p>
+			<p><label for="Salary">Salary: </label><input id="Salary" type="text" name="Salary"></p>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+			
+			<ul id="content"></ul>
+    	
+    	
+	</body>
+
+</html>
