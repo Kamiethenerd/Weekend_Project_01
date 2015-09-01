@@ -4,9 +4,23 @@ label{
 	width: 100px;
 	font-size: 20px;
 }
-.score5{
-	background-color: blue;
+li{
+	padding: 10px 20px;
+	margin:15px;
+
 }
-.score4{
-	background-color: purple;
+li.c5{
+	background: blue;
+}
+li.c4{
+	background: purple;
+}
+li.c3{
+	background: gray;	
+}
+li.c2{
+	background: green;
+}
+li.c1{
+	background: red;
 }

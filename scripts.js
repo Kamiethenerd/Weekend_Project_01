@@ -51,7 +51,7 @@ $(document).ready (function(){
 	 var Employee = function(firstName, lastName, empNum, title, rating, salary) {
 	 	this.firstName = firstName;
 	 	this.lastName = lastName;
-	 	console.log("function lasstNMAE" + this.lastName);
+	 	console.log(this.lastName);
 	 	this.employeeNumber = empNum;
 	 	this.title = title;
 	 	this.rating = rating;
@@ -66,8 +66,9 @@ $(document).ready (function(){
 							// };	
 	function appendEmployee(emp){
 		var $li = $('<li>');
-		console.log("emp", emp);
-		$li.attr('class','score' + emp.score);
+
+		console.log(emp.rating);
+		$li.attr('class', "c" + emp.rating);
 		$li.text(
 			emp.firstName + ' ' + 
 			emp.lastName + ', ' + 
@@ -88,7 +89,7 @@ $(document).ready (function(){
 	};
 
 	$content.on('click', '.js-delete', function(e){
-		alert("this works!");
+		
 		e.preventDefault();
 		$(this).parent().remove();
 	});
